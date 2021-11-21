@@ -31,7 +31,7 @@ async function index(): Promise<void> {
     try {
       bitmapSolver.testBitmapRow(row.trim());
     } catch (error) {
-      throw new Error('Line parsing error: ' + error);
+      throw new Error(`Line parsing error: ${error}`);
     }
   });
 
